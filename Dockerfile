@@ -9,4 +9,4 @@ COPY . /app
 
 ENV PYTHONPATH=.:src
 
-ENTRYPOINT uvicorn app:app --reload --port 8402
+ENTRYPOINT uvicorn app:app --reload --host 0.0.0.0 --port 8402
